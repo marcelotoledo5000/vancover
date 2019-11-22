@@ -1,7 +1,7 @@
 // The length provide you a source of unit
 // convetion of lenght
 
-package converter
+package vancover
 
 const (
 	kmmi      = 0.62137
