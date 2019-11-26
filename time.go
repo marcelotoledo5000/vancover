@@ -10,6 +10,7 @@ var (
 	hour    float32
 	day     float32
 	minutes float32
+	week    float32
 )
 
 // SecondtoHour (second float32) float32 in hour value
@@ -58,4 +59,22 @@ func MinutestoDay(minutes float32) float32 {
 func MinutestoHour(minutes float32) float32 {
 	hour = minutes / 60
 	return hour
+}
+
+// MinutestoSecond (minutes float32) float32 in second value
+func MinutestoSecond(minutes float32) float32 {
+	second = minutes * 60
+	return second
+}
+
+// MinutestoWeek (minutes float32) float32 in week value
+func MinutestoWeek(minutes float32) float32 {
+	week = MinutestoDay(minutes) * 7
+	return week
+}
+
+// WeektoDays (minutes float32) float32 in days value
+func WeektoDays(week float32) float32 {
+	day = week / 7
+	return day
 }
