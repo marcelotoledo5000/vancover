@@ -113,6 +113,41 @@ func YeartoSecond(year float32) float32 {
 	return year * 3.154e+7
 }
 
+// YeartoMinute (year float32) float32 in Minute value
+func YeartoMinute(year float32) float32 {
+	return year * 525600
+}
+
+// YeartoHour (year float32) float32
+func YeartoHour(year float32) float32 {
+	return year * 8760
+}
+
+//YeartoDay (year float32) float32 in Day Value
+func YeartoDay(year float32) float32 {
+	return year * 365
+}
+
+// YeartoWeek (year float32) float32 in Week Valye
+func YeartoWeek(year float32) float32 {
+	return year * 52.143
+}
+
+// YeartoMonth (year float32) float32 in Month Value
+func YeartoMonth(year float32) float32 {
+	return year * 12
+}
+
+// YeartoDecade (year float32) float32 in Decade value
+func YeartoDecade(year float32) float32 {
+	return year / 10
+}
+
+// YeartoCentury (year float32) float32 in Century value
+func YeartoCentury(year float32) float32 {
+	return year / 100
+}
+
 // DecadetoMonth receives (Decade float32) and returns float32 in Month Value
 func DecadetoMonth(decade float32) float32 {
 	return decade * 120
