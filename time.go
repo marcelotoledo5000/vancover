@@ -148,7 +148,32 @@ func YeartoCentury(year float32) float32 {
 	return year / 100
 }
 
+// DecadetoHour (decade float32) float32 in Hour Value
+func DecadetoHour(decade float32) float32 {
+	return decade * 87600
+}
+
+// DecadetoDay (decade float32) float32 in Day Value
+func DecadetoDay(decade float32) float32 {
+	return decade * 3650
+}
+
+// DecadetoWeek (decade float32) float32 in Week Value
+func DecadetoWeek(decade float32) float32 {
+	return decade * 521.429
+}
+
 // DecadetoMonth receives (Decade float32) and returns float32 in Month Value
 func DecadetoMonth(decade float32) float32 {
 	return decade * 120
+}
+
+// DecadetoYear receives (Decade float32) and returns float32 in Year Value
+func DecadetoYear(decade float32) float32 {
+	return decade * 10
+}
+
+// DecadetoCentury receives (Decade float32) and returns float32 in Century Value
+func DecadetoCentury(decade float32) float32 {
+	return decade / 10
 }
