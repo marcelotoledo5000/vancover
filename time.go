@@ -177,3 +177,8 @@ func DecadetoYear(decade float32) float32 {
 func DecadetoCentury(decade float32) float32 {
 	return decade / 10
 }
+
+// CenturytoYear (century float32) float32 in Year Value
+func CenturytoYear(century float32) float32 {
+	return century / 100
+}
