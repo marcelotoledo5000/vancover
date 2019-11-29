@@ -8,27 +8,15 @@ const (
 	yardmeter = 1.0936
 )
 
-var (
-	centimeter  float32
-	feet        float32
-	inches      float32
-	meter       float32
-	miles       float32
-	kilometers  float32
-	millimeters float32
-	yard        float32
-)
-
 // MilestoKilometers returns Kilometers in x Miles
 func MilestoKilometers(kilometers float32) float32 {
-	miles = kilometers * kmmi
-	return miles
+	return kilometers * kmmi
+
 }
 
 // KilometerstoMiles return Miles in x Kilometers
 func KilometerstoMiles(miles float32) float32 {
-	kilometers = miles / kmmi
-	return kilometers
+	return miles / kmmi
 }
 
 // FeetoMeters converts feet to meters
@@ -39,48 +27,40 @@ func FeetoMeters(feet float32) float32 {
 
 // FeetoYard (feet float32) returns flaot32 in yard value
 func FeetoYard(feet float32) float32 {
-	yard = feet * 0.33333
-	return yard
+	return feet * 0.33333
 }
 
 // MeterstoFeet converts Meters to feet
 func MeterstoFeet(meter float32) float32 {
-	feet = meter * 3.2808
-	return feet
+	return meter * 3.2808
 }
 
 // InchestoCentimeter (inches float32) returns float32 in Centimeter
 func InchestoCentimeter(inches float32) float32 {
-	centimeter = inches / 0.39370
-	return centimeter
+	return inches / 0.39370
 }
 
 // InchestoMillimeters (inches float32) returns float32 in Millimeters value
 func InchestoMillimeters(inches float32) float32 {
-	millimeters = InchestoCentimeter(inches) * 10
-	return millimeters
+	return InchestoCentimeter(inches) * 10
 }
 
 // InchestoFeet (inches float32) returns float32 in Feet value
 func InchestoFeet(inches float32) float32 {
-	feet = inches * 0.083333
-	return feet
+	return inches * 0.083333
 }
 
 // MeterstoYard (meters float32) returns float32 in Yard value
 func MeterstoYard(meters float32) float32 {
-	yard = meters * yardmeter
-	return yard
+	return meters * yardmeter
 }
 
 // YardtoMeters (yard float32) returns float32 in Meters value
 func YardtoMeters(yard float32) float32 {
-	meter = yard / yardmeter
-	return meter
+	return yard / yardmeter
 }
 
 // YardtoFeet (feet float32) returns float32 in Yard value
-func YardtoFeet(feet float32) float32 {
-	feet = yard / 3.0000
-	return feet
+func YardtoFeet(yard float32) float32 {
+	return yard / 3.0000
 }
