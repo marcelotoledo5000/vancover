@@ -209,3 +209,38 @@ func Squaremiletometer(squaremile float32) float32 {
 func Squaremiletokilometer(squaremile float32) float32 {
 	return squaremile * 2.59
 }
+
+// SquarekilometertoAcre (squarekilometer float32) float32
+func SquarekilometertoAcre(squarekilometer float32) float32 {
+	return squarekilometer * 247.105
+}
+
+// SquarekilometertoHectare (squarekilometer float32) float32
+func SquarekilometertoHectare(squarekilometer float32) float32 {
+	return squarekilometer * 100
+}
+
+// SquarekilometertoSquareinch (squarekilometer float32) float32
+func SquarekilometertoSquareinch(squarekilometer float32) float32 {
+	return squarekilometer * 1.55e+9
+}
+
+// SquarekilometertoSquarefoot (squarekilometer float32) float32
+func SquarekilometertoSquarefoot(squarekilometer float32) float32 {
+	return squarekilometer * 1.076e+7
+}
+
+// SquarekilometertoSquareyard (squarekilometer float32) float32
+func SquarekilometertoSquareyard(squarekilometer float32) float32 {
+	return squarekilometer * 1.196e+6
+}
+
+// SquarekilometertoSquaremile (squarekilometer float32) float32
+func SquarekilometertoSquaremile(squarekilometer float32) float32 {
+	return squarekilometer / 2.59
+}
+
+// SquarekilometertoSquaremeter (squarekilometer float32) float32
+func SquarekilometertoSquaremeter(squarekilometer float32) float32 {
+	return squarekilometer * 1e+6
+}
