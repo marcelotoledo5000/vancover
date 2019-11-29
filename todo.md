@@ -1,19 +1,11 @@
 # Things to do
 
-## Lenght.go 
+## Speed functions
 
-Meters to Yard       function
+Miles per hour functions
 
-Yard   to Meters     function
+Kilometer per hour functions
 
-Yard   to Feet       function
+Meters per second functions
 
-Feet   to Yard       function
-
-Milimeters to inches function
-
-inches to Milimeters function
-
-Feet   to inches     function
-
-inches to Feet       function
+Foot per second functions
