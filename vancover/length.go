@@ -4,8 +4,8 @@
 package vancover
 
 const (
-	kmmi      = 0.62137
-	yardmeter = 1.0936
+	kmmi = 0.62137
+	yame = 1.0936
 )
 
 // MilestoKilometers returns Kilometers in x Miles
@@ -52,12 +52,12 @@ func InchestoFeet(inches float32) float32 {
 
 // MeterstoYard (meters float32) returns float32 in Yard value
 func MeterstoYard(meters float32) float32 {
-	return meters * yardmeter
+	return meters * yame
 }
 
 // YardtoMeters (yard float32) returns float32 in Meters value
 func YardtoMeters(yard float32) float32 {
-	return yard / yardmeter
+	return yard / yame
 }
 
 // YardtoFeet (feet float32) returns float32 in Yard value
